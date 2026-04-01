@@ -1,0 +1,5 @@
+$kind: http-request
+name: find all
+url: localhost:8080/api/teacher
+method: GET
+order: 1000

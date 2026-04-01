@@ -1,0 +1,6 @@
+$kind: http-request
+url: localhost:8080/api/user/:id
+method: DELETE
+pathVariables:
+  id: "1"
+order: 2000

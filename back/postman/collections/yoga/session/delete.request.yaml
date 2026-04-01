@@ -1,0 +1,5 @@
+$kind: http-request
+name: delete
+url: localhost:8080/api/session/6
+method: DELETE
+order: 5000

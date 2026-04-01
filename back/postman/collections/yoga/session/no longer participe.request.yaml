@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost:8080/api/session/:id/participate/:userId
+method: DELETE
+pathVariables:
+  id: "1"
+  userId: "2"
+order: 7000

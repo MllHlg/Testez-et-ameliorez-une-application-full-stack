@@ -1,0 +1,15 @@
+$kind: http-request
+name: create
+url: localhost:8080/api/session
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "name": "session 2",
+        "date": "2026-05-01",
+        "teacher_id": 3,
+        "users": null,
+        "description": "my description"
+    }
+order: 3000

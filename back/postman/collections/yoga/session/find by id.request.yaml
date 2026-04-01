@@ -1,0 +1,5 @@
+$kind: http-request
+name: find by id
+url: localhost:8080/api/session/1
+method: GET
+order: 2000

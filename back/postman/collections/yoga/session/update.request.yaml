@@ -1,0 +1,15 @@
+$kind: http-request
+name: update
+url: localhost:8080/api/session/1
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "name": "session 1",
+        "date": "2026-04-01T00:00:00.000+00:00",
+        "teacher_id": 1,
+        "description": "my description",
+        "users": []
+    }
+order: 4000
