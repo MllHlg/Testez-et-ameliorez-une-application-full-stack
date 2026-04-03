@@ -4,7 +4,7 @@
     <mat-card-title>
       <div fxLayout="row" fxLayoutAlign="space-between center">
         <div fxLayout="row" fxLayoutAlign="start center">
-          <button mat-icon-button (click)="back()">
+          <button mat-icon-button (click)="back()" data-testid="back-button">
             <mat-icon>arrow_back</mat-icon>
           </button>
           <h1 data-testid="session-name">{{ session.name | titlecase }}</h1>
@@ -18,12 +18,12 @@
           } @else {
           <div>
             @if (!isParticipate) {
-            <button mat-raised-button color="primary" (click)="participate()">
+            <button mat-raised-button color="primary" (click)="participate()" data-testid="participate-button">
               <mat-icon>person_add</mat-icon>
               <span class="ml1">Participate</span>
             </button>
             } @else {
-            <button mat-raised-button color="warn" (click)="unParticipate()">
+            <button mat-raised-button color="warn" (click)="unParticipate()" data-testid="unparticipate-button">
               <mat-icon>person_remove</mat-icon>
               <span class="ml1">Do not participate</span>
             </button>
